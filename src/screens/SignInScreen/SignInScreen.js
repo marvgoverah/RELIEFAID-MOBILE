@@ -3,6 +3,7 @@ import { View, Text, Image, StyleSheet, useWindowDimensions,ScrollView } from 'r
 import logo from '../../../assets/images/logo.png';
 import CustomInput from '../../components/CustomInputs/CustomInput';
 import CustomButton from '../../components/CustomButton';
+import SocialSignInButtons from "../../components/SocialSignInButtons";
 
 
 const SignInscreen = () => {
@@ -15,15 +16,6 @@ const SignInscreen = () => {
 
     const onForgotPasswordPressed = () => {
         console.warn('onForgotPasswordPressed');
-    };
-    const onSignInFacebook = () => {
-        console.warn('onSignInFacebook');
-    };
-    const onSignInGoogle = () => {
-        console.warn('onSignInGoogle');
-    };
-    const onSignInApple = () => {
-        console.warn('onSignInApple');
     };
     const onSignUpPressed = () =>{
         console.warn('onSignUpPressed');
@@ -61,25 +53,9 @@ const SignInscreen = () => {
             text = "Forgot password" 
              onPress={onForgotPasswordPressed } 
              type ='TERTIARY'
-              />      
-            <CustomButton
-             text = "Sign In with Facebook"
-             onPress={onSignInFacebook }
-             bgColor='#E7EAF4'
-             fgColor='#4765A9'
-             />   
-            <CustomButton 
-            text = "Sign In with Google"
-             onPress={onSignInGoogle }
-             bgColor='#FAE9EA'
-             fgColor='#DD4D44' 
-              />
-            <CustomButton 
-            text = "Sign In with ICLOUD" 
-            onPress={onSignInApple }  
-            bgColor='#e3e3e3'
-            fgColor='#363636'
-            />
+              />    
+              <SocialSignInButtons/>  
+              
             <CustomButton 
             text = "Dont have an account? Create one!"
             onPress={onSignUpPressed } 
@@ -93,7 +69,7 @@ const SignInscreen = () => {
 const styles = StyleSheet.create({
     root:{
         alignItems: 'center',
-        padding: 60,
+        padding: 20,
     },
 
     logo: {
