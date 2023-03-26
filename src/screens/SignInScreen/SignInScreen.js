@@ -1,17 +1,23 @@
 import React, {useState} from "react";
 import { View, Text, Image, StyleSheet, useWindowDimensions,ScrollView } from 'react-native';
 import logo from '../../../assets/images/logo.png';
-import CustomInput from '../../components/CustomInputs/CustomInput';
+import CustomInput from '../../components/CustomInputs';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButtons from "../../components/SocialSignInButtons";
+//import {useNavigation } from '@react-navigation/native';
 
 
 const SignInscreen = () => {
     const [username, setUsername] =useState('');
     const [password, setPassword] = useState('');
 
+    const navigation = useNavigation();
+
     const onSignInPressed = () => {
-      console.warn("Sign in");  
+      console.warn("Sign in"); 
+      // validate
+      
+     // navigation.navigate('Home');
     };
 
     const onForgotPasswordPressed = () => {
