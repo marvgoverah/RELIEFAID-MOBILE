@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reliefaid-staging-200536-authRole",
+      "UnauthRoleArn": "arn:aws:iam::244936064944:role/amplify-reliefaid-staging-200536-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::244936064944:role/amplify-reliefaid-staging-200536-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-reliefaid-staging-200536-deployment",
+      "UnauthRoleName": "amplify-reliefaid-staging-200536-unauthRole",
+      "StackName": "amplify-reliefaid-staging-200536",
+      "StackId": "arn:aws:cloudformation:eu-north-1:244936064944:stack/amplify-reliefaid-staging-200536/e6327730-d25a-11ed-a8fa-0eb3fddac932",
+      "AmplifyAppId": "d1ua2y7rahbg6g"
+    },
+    "categories": {
+      "auth": {
+        "ReliefAid": {}
+      }
+    }
+  }
+}

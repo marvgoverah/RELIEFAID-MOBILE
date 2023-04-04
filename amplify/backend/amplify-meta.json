@@ -1,0 +1,61 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reliefaid-staging-200536-authRole",
+      "UnauthRoleArn": "arn:aws:iam::244936064944:role/amplify-reliefaid-staging-200536-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::244936064944:role/amplify-reliefaid-staging-200536-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-reliefaid-staging-200536-deployment",
+      "UnauthRoleName": "amplify-reliefaid-staging-200536-unauthRole",
+      "StackName": "amplify-reliefaid-staging-200536",
+      "StackId": "arn:aws:cloudformation:eu-north-1:244936064944:stack/amplify-reliefaid-staging-200536/e6327730-d25a-11ed-a8fa-0eb3fddac932",
+      "AmplifyAppId": "d1ua2y7rahbg6g"
+    }
+  },
+  "auth": {
+    "ReliefAid": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "NAME"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "eu-north-1_JJLgTs9BZ",
+        "AppClientIDWeb": "4atfj4t0063ouh56lkm2nvtp64",
+        "AppClientID": "90ecadfo8tbsruil6psu2tf6n",
+        "IdentityPoolId": "eu-north-1:d19e69c0-37c8-47c3-8666-a85645c8ff25",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:244936064944:userpool/eu-north-1_JJLgTs9BZ",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "ReliefAid"
+      },
+      "lastPushTimeStamp": "2023-04-04T10:59:53.957Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reliefaid-staging-200536-deployment/amplify-cfn-templates/auth/ReliefAid-cloudformation-template.json",
+        "logicalId": "authReliefAid"
+      }
+    }
+  }
+}
